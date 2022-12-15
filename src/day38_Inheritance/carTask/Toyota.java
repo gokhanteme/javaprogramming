@@ -10,6 +10,20 @@ public void reliable(){
     System.out.println(brand+" "+model+" is reliable");
 }
 
+    @Override
+    public void drive() {
+        System.out.println("slowly "+brand+" "+model);
+    }
+
+    public void start(){
+    System.out.println("twist the key to Ignition to start "+brand+" "+model);
+
+
+
+
+
+}
+
 
 
 }
