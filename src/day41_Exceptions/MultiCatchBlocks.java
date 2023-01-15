@@ -17,19 +17,25 @@ public class MultiCatchBlocks {
         } catch (IndexOutOfBoundsException e) {
             System.out.println("second catch Block");
             e.printStackTrace();
-        }catch (ArithmeticException e){
+        } catch (ArithmeticException e) {
             System.out.println("third catch block");
             e.printStackTrace();
-        }catch (ClassCastException e){
+        } catch (ClassCastException e) {
             System.out.println("fourth catch block");
             e.printStackTrace();
-        }catch (RuntimeException e){
+        } catch (RuntimeException e) {
             System.out.println("fifth catch block");
             e.printStackTrace();
         }
 
         System.out.println("Test completed");
 
+        System.out.println("----------------------------------");
 
+        try {
+            System.out.println("Java".charAt(-1));
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
     }
 }
